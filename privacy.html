@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summarizzit - Privacy Policy</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        h1 { color: #ff4500; border-bottom: 2px solid #ff4500; padding-bottom: 10px; }
+        h2 { color: #0079d3; margin-top: 30px; }
+        .last-updated { color: #666; font-style: italic; }
+        a { color: #0079d3; }
+        .highlight { background-color: #fff3cd; padding: 15px; border-left: 4px solid #ff4500; margin: 20px 0; }
+    </style>
+</head>
+<body>
+    <h1>Summarizzit - Privacy Policy</h1>
+    <p class="last-updated">Last Updated: December 14, 2025</p>
+
+    <div class="highlight">
+        <strong>Key Points:</strong>
+        <ul>
+            <li>We collect minimal data necessary to provide the service</li>
+            <li>Post content is sent to AI providers (Google, OpenAI, Perplexity) for summarization</li>
+            <li>We do NOT sell your data or use it for advertising</li>
+            <li>Summaries are cached temporarily to improve performance</li>
+        </ul>
+    </div>
+
+    <h2>1. Introduction</h2>
+    <p>This Privacy Policy explains how Summarizzit ("we", "us", "the App") collects, uses, and protects your information when you use our Reddit app. By using Summarizzit, you consent to the practices described in this policy.</p>
+
+    <h2>2. Information We Collect</h2>
+
+    <h3>2.1 Automatically Collected Information</h3>
+    <ul>
+        <li><strong>Reddit User ID:</strong> Your unique Reddit user identifier (e.g., "t2_xxxxx") for quota tracking and payment verification</li>
+        <li><strong>Usage Data:</strong> Number of summaries generated, timestamps, success/failure rates</li>
+        <li><strong>Technical Data:</strong> Subreddit context, post IDs you summarize</li>
+        <li><strong>Payment Status:</strong> Whether you have an active Pro subscription (verified through Reddit's API)</li>
+    </ul>
+
+    <h3>2.2 User-Provided Content</h3>
+    <ul>
+        <li><strong>Reddit Post URLs:</strong> Links to posts you request to summarize</li>
+        <li><strong>Post Content:</strong> Titles, body text, and up to 25 top comments from requested posts</li>
+    </ul>
+
+    <h3>2.3 Information We Do NOT Collect</h3>
+    <ul>
+        <li>Your Reddit password or authentication credentials</li>
+        <li>Payment card information (handled by Reddit)</li>
+        <li>Private messages or inbox content</li>
+        <li>Your voting history or saved posts</li>
+        <li>Personal information beyond your Reddit user ID</li>
+        <li>Browser fingerprints or tracking cookies</li>
+    </ul>
+
+    <h2>3. How We Use Your Information</h2>
+    <p>We use collected information for the following purposes:</p>
+    <ul>
+        <li><strong>Service Delivery:</strong> Generate AI summaries of Reddit posts you request</li>
+        <li><strong>Quota Management:</strong> Track free tier usage (10 summaries/month) and enforce limits</li>
+        <li><strong>Payment Verification:</strong> Check if you have an active Pro subscription</li>
+        <li><strong>Caching:</strong> Store summaries temporarily to improve performance and reduce costs</li>
+        <li><strong>Analytics:</strong> Monitor API costs, error rates, and service health</li>
+        <li><strong>Service Improvement:</strong> Identify bugs, optimize performance, and enhance features</li>
+    </ul>
+
+    <h2>4. Third-Party Services & Data Sharing</h2>
+
+    <h3>4.1 AI Processing Services</h3>
+    <p>To generate summaries, we send post content and comments to the following AI providers:</p>
+    <ul>
+        <li><strong>Google Gemini AI</strong> (primary provider)</li>
+        <li><strong>OpenAI GPT models</strong> (fallback provider)</li>
+        <li><strong>Perplexity AI</strong> (fallback provider)</li>
+    </ul>
+    <p><strong>Data Sent:</strong> Post title, body, and up to 25 comments (truncated to 200 characters each)</p>
+    <p><strong>Data Retention by AI Providers:</strong> These services may retain data according to their own policies. We recommend reviewing:</p>
+    <ul>
+        <li><a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a></li>
+        <li><a href="https://openai.com/policies/privacy-policy" target="_blank">OpenAI Privacy Policy</a></li>
+        <li><a href="https://www.perplexity.ai/privacy" target="_blank">Perplexity Privacy Policy</a></li>
+    </ul>
+
+    <h3>4.2 Reddit Platform</h3>
+    <p>We interact with Reddit's API to:</p>
+    <ul>
+        <li>Fetch post content and comments</li>
+        <li>Verify your payment status</li>
+        <li>Identify your user ID</li>
+    </ul>
+    <p>Reddit's <a href="https://www.reddit.com/policies/privacy-policy" target="_blank">Privacy Policy</a> governs their data handling.</p>
+
+    <h3>4.3 Data We Do NOT Share</h3>
+    <p>We do NOT:</p>
+    <ul>
+        <li>Sell your data to third parties</li>
+        <li>Share your information with advertisers</li>
+        <li>Provide data to data brokers</li>
+        <li>Use your content for training our own AI models</li>
+    </ul>
+
+    <h2>5. Data Storage & Retention</h2>
+
+    <h3>5.1 Cached Summaries</h3>
+    <ul>
+        <li><strong>Storage Location:</strong> Redis database (managed by Reddit/Devvit)</li>
+        <li><strong>Retention Period:</strong> Up to 30 days</li>
+        <li><strong>Purpose:</strong> Avoid regenerating summaries for the same post, reducing costs and improving speed</li>
+    </ul>
+
+    <h3>5.2 Usage Metrics</h3>
+    <ul>
+        <li><strong>Retention Period:</strong> 90 days</li>
+        <li><strong>Data Stored:</strong> Summary count per user per month, API costs, error logs</li>
+    </ul>
+
+    <h3>5.3 Payment Records</h3>
+    <ul>
+        <li><strong>Retention Period:</strong> 35 days (for subscription verification)</li>
+        <li><strong>Data Stored:</strong> Order IDs, subscription status, timestamps</li>
+    </ul>
+
+    <h2>6. Data Security</h2>
+    <p>We implement reasonable security measures to protect your data:</p>
+    <ul>
+        <li>API keys are stored securely in Reddit's settings system</li>
+        <li>Data transmission uses HTTPS encryption</li>
+        <li>Redis database access is restricted to the App</li>
+        <li>No passwords or sensitive credentials are stored</li>
+    </ul>
+    <p><strong>However:</strong> No method of transmission or storage is 100% secure. We cannot guarantee absolute security.</p>
+
+    <h2>7. Your Data Rights</h2>
+    <p>Depending on your jurisdiction, you may have the following rights:</p>
+    <ul>
+        <li><strong>Access:</strong> Request a copy of data we hold about you</li>
+        <li><strong>Deletion:</strong> Request deletion of your data (contact us)</li>
+        <li><strong>Correction:</strong> Request correction of inaccurate data</li>
+        <li><strong>Portability:</strong> Receive your data in a structured format</li>
+        <li><strong>Opt-Out:</strong> Stop using the App to prevent further data collection</li>
+    </ul>
+    <p>To exercise these rights, contact us at <strong>[Your Email]</strong>.</p>
+
+    <h2>8. Children's Privacy</h2>
+    <p>Summarizzit is not intended for users under 13 years old (or the minimum age in your jurisdiction). We do not knowingly collect data from children. If we discover such collection, we will delete the data immediately.</p>
+
+    <h2>9. International Users</h2>
+    <p>Summarizzit is hosted on Reddit's platform, which may store data in various locations. By using the App, you consent to the transfer of your information to countries that may have different data protection laws than your own.</p>
+
+    <h2>10. California Privacy Rights (CCPA)</h2>
+    <p>If you are a California resident, you have additional rights under the CCPA:</p>
+    <ul>
+        <li>Right to know what personal information is collected</li>
+        <li>Right to know if personal information is sold or disclosed</li>
+        <li>Right to opt-out of the sale of personal information (we do NOT sell data)</li>
+        <li>Right to deletion</li>
+        <li>Right to non-discrimination for exercising your rights</li>
+    </ul>
+
+    <h2>11. European Users (GDPR)</h2>
+    <p>If you are in the European Economic Area (EEA), UK, or Switzerland:</p>
+    <ul>
+        <li><strong>Legal Basis:</strong> We process data based on consent (by using the App) and legitimate interests (service delivery)</li>
+        <li><strong>Data Controller:</strong> The App developer is the data controller</li>
+        <li><strong>Your Rights:</strong> Access, rectification, erasure, restriction, portability, objection</li>
+        <li><strong>Supervisory Authority:</strong> You may lodge a complaint with your local data protection authority</li>
+    </ul>
+
+    <h2>12. Cookies & Tracking</h2>
+    <p>Summarizzit does NOT use cookies or tracking pixels. Reddit's platform may use its own tracking technologies as described in <a href="https://www.reddit.com/policies/cookies" target="_blank">Reddit's Cookie Policy</a>.</p>
+
+    <h2>13. Changes to This Policy</h2>
+    <p>We may update this Privacy Policy from time to time. Changes will be effective immediately upon posting. We will update the "Last Updated" date at the top. Continued use after changes constitutes acceptance.</p>
+
+    <h2>14. Do Not Track Signals</h2>
+    <p>Our App does not respond to "Do Not Track" browser signals, as we do not track users across websites.</p>
+
+    <h2>15. Contact Us</h2>
+    <p>For privacy-related questions, concerns, or data requests:</p>
+    <p>Email: <strong>[Your Email Address]</strong><br>
+    Reddit: <strong>[Your Reddit Username]</strong></p>
+
+    <h2>16. Compliance with Reddit Policies</h2>
+    <p>This Privacy Policy is designed to comply with:</p>
+    <ul>
+        <li><a href="https://redditinc.com/policies/developer-terms" target="_blank">Reddit Developer Terms</a></li>
+        <li><a href="https://developers.reddit.com/docs/devvit_rules" target="_blank">Reddit Devvit Rules</a></li>
+        <li><a href="https://redditinc.com/policies/developer-dpa" target="_blank">Reddit Developer Data Protection Addendum</a></li>
+    </ul>
+
+    <hr>
+    <p style="color: #666; font-size: 0.9em;">
+        By using Summarizzit, you acknowledge that you have read and understood this Privacy Policy.
+    </p>
+</body>
+</html>
